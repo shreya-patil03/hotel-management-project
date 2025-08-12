@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guest Reviews - Hotel Paradise</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    .container-bg {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 12px;
+      margin-top: 50px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    }
+
+    .star-rating i {
+      color: #ccc;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .star-rating i.checked {
+      color: gold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.85);
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+  <a class="navbar-brand" href="new home page paradise.html">Hotel Paradise</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto gap-3">
+      <li class="nav-item"><a class="nav-link" href="new home page paradise.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+      <li class="nav-item"><a class="nav-link" href="bookings.html">Booking</a></li>
+      <li class="nav-item"><a class="nav-link" href="help22.html">Contact</a></li>
+      <li class="nav-item"><a class="nav-link active" href="#">Reviews</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Review Section -->
+<div class="container container-bg">
+  <h2 class="mb-4 text-center">Guest Reviews</h2>
+
+  <!-- Review Form -->
+  <form id="reviewForm">
+    <div class="mb-3">
+      <label for="reviewerName" class="form-label">Your Name</label>
+      <input type="text" class="form-control" id="reviewerName" required>
+    </div>
+    <div class="mb-3">
+      <label for="reviewText" class="form-label">Your Review</label>
+      <textarea class="form-control" id="reviewText" rows="4" required></textarea>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Your Rating</label>
+      <div class="star-rating" id="starRating">
+        <i class="bi bi-star" data-value="1"></i>
+        <i class="bi bi-star" data-value="2"></i>
+        <i class="bi bi-star" data-value="3"></i>
+        <i class="bi bi-star" data-value="4"></i>
+        <i class="bi bi-star" data-value="5"></i>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Review</button>
+  </form>
+
+  <hr class="my-4" />
+
+  <h4 class="mb-3">What Our Guests Say</h4>
+  <div class="accordion" id="reviewAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading0">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse0">
+          Riya Sharma - ★★★★★
+        </button>
+      </h2>
+      <div id="collapse0" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          "Absolutely loved the hospitality! Rooms were neat and the beach view was stunning. The ambiance of the hotel gave me such relaxing vibes. Would definitely recommend for a weekend getaway."
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading1">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+          Aman Patel - ★★★★★
+        </button>
+      </h2>
+      <div id="collapse1" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          "The service is top-notch, especially the room dining experience. Staff is courteous and prompt in service. My family enjoyed the pool area a lot. Totally worth the money!"
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+          Neha Deshmukh - ★★★★☆
+        </button>
+      </h2>
+      <div id="collapse2" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          "The spa facilities were amazing and extremely relaxing. The room was spacious and had a beautiful balcony view. Breakfast buffet had good variety. Only downside was a slight delay during check-in."
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+          Rahul Mehta - ★★★★★
+        </button>
+      </h2>
+      <div id="collapse3" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          "An unforgettable experience! The candlelight dinner arrangement on the rooftop was magical. Every staff member made sure our anniversary was celebrated grandly. Thank you Hotel Paradise!"
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading4">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+          Sneha Joshi - ★★★★☆
+        </button>
+      </h2>
+      <div id="collapse4" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          "Clean and hygienic environment with friendly front desk staff. Room service was prompt and polite. We had a smooth experience right from booking till checkout. Would love to visit again!"
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Hotel Paradise. All rights reserved.</p>
+  <p><i class="bi bi-telephone-fill me-2"></i>+91 98765 43210 |
+     <i class="bi bi-envelope-fill me-2"></i>support@hotelparadise.com</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  let selectedRating = 0;
+  const stars = document.querySelectorAll('#starRating i');
+  stars.forEach((star, index) => {
+    star.addEventListener('click', () => {
+      selectedRating = index + 1;
+      updateStarUI(selectedRating);
+    });
+  });
+
+  function updateStarUI(rating) {
+    stars.forEach((star, idx) => {
+      star.classList.toggle('checked', idx < rating);
+    });
+  }
+
+  document.getElementById("reviewForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const name = document.getElementById("reviewerName").value.trim();
+    const text = document.getElementById("reviewText").value.trim();
+    const accordion = document.getElementById("reviewAccordion");
+    const newIndex = accordion.children.length;
+    if (name && text) {
+      const starsText = '★'.repeat(selectedRating) + '☆'.repeat(5 - selectedRating);
+      const reviewHTML = `
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading${newIndex}">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${newIndex}">
+              ${name} - ${starsText}
+            </button>
+          </h2>
+          <div id="collapse${newIndex}" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              "${text}"
+            </div>
+          </div>
+        </div>
+      `;
+      accordion.insertAdjacentHTML('beforeend', reviewHTML);
+      this.reset();
+      updateStarUI(0);
+      selectedRating = 0;
+    }
+  });
+</script>
+
+</body>
+</html>
+

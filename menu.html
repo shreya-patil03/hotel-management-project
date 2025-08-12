@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotel Paradise - Full Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #f4f9ff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar-brand {
+      font-weight: 600;
+      font-size: 1.6rem;
+    }
+    .menu-section {
+      margin-top: 60px;
+    }
+    .card {
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border: none;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .category-heading {
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      font-weight: bold;
+      color: #007bff;
+    }
+    footer {
+      margin-top: 80px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+  <a class="navbar-brand" href="new home page paradise.html">
+    <img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Paradise" width="30" height="30" class="d-inline-block align-text-top" />
+    Hotel Paradise
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row align-items-center gap-3">
+      <li class="nav-item"><a class="nav-link active" href="new home page paradise.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+      <li class="nav-item"><a class="nav-link" href="bookings.html">Booking</a></li>
+      <li class="nav-item"><a class="nav-link" href="Paradise login.html">Login</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown">
+          <i class="bi bi-list fs-4"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="menu.html">Dine</a></li>
+		    <li><a class="dropdown-item" href="galleryparadise.html">Gallery</a></li>
+          <li><a class="dropdown-item" href="banquet.html">Banquet</a></li>
+          <li><a class="dropdown-item" href="events.html">Events & Conferences</a></li>
+          <li><a class="dropdown-item" href="offers.html">Offers</a></li>
+		  <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
+          <li><a class="dropdown-item" href="help22.html">Contact Us</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- Menu Section -->
+<div class="container menu-section">
+  <h2 class="text-center mb-5">Explore Our Delicious Menu</h2>
+
+  <!-- Breakfast -->
+  <div class="category-heading">Breakfast</div>
+  <div class="row g-4 mb-4">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJLkdmNl2vyxV9YYnT9VoxnH_1XU_6IuSjdw&s" class="card-img-top" alt="South Indian">
+        <div class="card-body">
+          <h5 class="card-title">South Indian Combo</h5>
+          <p class="card-text">Idli, dosa, vada with coconut chutney & sambar.</p>
+          <p class="text-muted">₹180</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://c8.alamy.com/comp/2F2PREX/continental-food-ingredients-cottage-cheese-grilled-and-vegetable-slices-2F2PREX.jpg" class="card-img-top" alt="Continental Breakfast">
+        <div class="card-body">
+          <h5 class="card-title">Continental Breakfast</h5>
+          <p class="card-text">Omelette, toast, fruit juice, and muffins.</p>
+          <p class="text-muted">₹220</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lunch -->
+  <div class="category-heading">Lunch</div>
+  <div class="row g-4 mb-4">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdv0ppYFdOyce97vzfNKNVsyLUJTgVv3-H-g&s" class="card-img-top" alt="Veg Thali">
+        <div class="card-body">
+          <h5 class="card-title">Vegetarian Thali</h5>
+          <p class="card-text">Roti, rice, 2 sabzi, dal, salad, papad & dessert.</p>
+          <p class="text-muted">₹260</p>
+        </div>
+      </div>
+    </div>
+   
+  <!-- Dinner -->
+  <div class="category-heading">Dinner</div>
+  <div class="row g-4 mb-4">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://www.shutterstock.com/image-photo/chicken-alfredo-penne-creamy-pasta-600nw-2493019471.jpg" class="card-img-top" alt="Pasta">
+        <div class="card-body">
+          <h5 class="card-title">Creamy Alfredo Pasta</h5>
+          <p class="card-text">Italian pasta in white sauce with garlic bread.</p>
+          <p class="text-muted">₹280</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://ministryofcurry.com/wp-content/uploads/2020/07/paneer-butter-masala_-2.jpg" class="card-img-top" alt="Paneer Masala">
+        <div class="card-body">
+          <h5 class="card-title">Paneer Butter Masala</h5>
+          <p class="card-text">Paneer cubes cooked in creamy tomato gravy with naan.</p>
+          <p class="text-muted">₹250</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Beverages -->
+  <div class="category-heading">Beverages</div>
+  <div class="row g-4 mb-4">
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Fresh Lime Soda</h5>
+          <p class="text-muted">₹70</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Cold Coffee</h5>
+          <p class="text-muted">₹90</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Desserts -->
+  <div class="category-heading">Desserts</div>
+  <div class="row g-4 mb-5">
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Gulab Jamun (2 pcs)</h5>
+          <p class="text-muted">₹60</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Ice Cream Scoop</h5>
+          <p class="text-muted">₹50</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  &copy; 2025 Hotel Paradise | Designed by Frontend Intern | All Rights Reserved
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  console.log("Hotel Paradise Menu loaded successfully");
+</script>
+
+</body>
+</html>
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJLkdmNl2vyxV9YYnT9VoxnH_1XU_6IuSjdw&s

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About - Hotel Paradise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #444;
+    }
+    .navbar-brand {
+      font-weight: 700;
+    }
+    .hero-section {
+      background: url('https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center/cover;
+      height: 85vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 10px #000;
+      text-align: center;
+      padding: 0 1rem;
+    }
+    .hero-section h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
+    @media (max-width: 576px) {
+      .hero-section h1 {
+        font-size: 2rem;
+      }
+    }
+    .container {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+    }
+    .section-title {
+      font-weight: 700;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #0d6efd;
+    }
+    .lead {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 3rem;
+    }
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    .about-content img {
+      border-radius: 12px;
+      max-width: 100%;
+      flex: 1 1 300px;
+      box-shadow: 0 8px 24px rgb(0 0 0 / 0.1);
+    }
+    .about-text {
+      flex: 1 1 300px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+    ul.list-group {
+      max-width: 500px;
+      margin: 0 auto 4rem auto;
+      font-size: 1.1rem;
+      color: #444;
+      box-shadow: 0 4px 20px rgb(0 0 0 / 0.05);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    ul.list-group li {
+      padding: 1rem 1.5rem;
+      border: none;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      background-color: #f8f9fa;
+      font-weight: 600;
+      color: #0d6efd;
+    }
+    ul.list-group li:last-child {
+      border-bottom: none;
+    }
+    .list-group li::before {
+      content: "✔";
+      color: #0d6efd;
+      font-weight: 700;
+    }
+    .testimonials {
+      max-width: 900px;
+      margin: 0 auto 4rem auto;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .testimonial {
+      background: #eaf4fc;
+      padding: 1.5rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgb(13 110 253 / 0.2);
+      flex: 1 1 400px;
+      font-style: italic;
+      color: #333;
+      position: relative;
+    }
+    .testimonial strong {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 700;
+      color: #0d6efd;
+      font-style: normal;
+    }
+    footer {
+      background-color: #212529;
+      color: #bbb;
+      padding: 2.5rem 1rem;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="new home page paradise.html">
+      <img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Paradise" width="30" height="30" class="d-inline-block align-text-top" />
+      Hotel Paradise
+    </a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <h1>Welcome to Hotel Paradise</h1>
+  </section>
+
+  <!-- About Section -->
+  <div class="container">
+    <h2 class="section-title">About Us</h2>
+    <p class="lead">Established in 2023, Hotel Paradise is your perfect getaway nestled in the heart of Beach City. With luxurious rooms, fine dining, and unmatched service, we ensure a memorable experience for every guest.</p>
+
+    <div class="about-content">
+      <img src="https://as2.ftcdn.net/v2/jpg/13/39/50/83/1000_F_1339508304_PCSGBznVn3nrbQjl9x3zEp2Ue14qPQGO.jpg" alt="Hotel Room" />
+      <div class="about-text">
+        <p>Our mission is to deliver comfort, style, and personalized service. Whether you're here for leisure, a romantic escape, or business travel, Hotel Paradise is your home away from home.</p>
+        <p>We believe in making your stay memorable through attention to detail and warm hospitality.</p>
+      </div>
+    </div>
+
+    <!-- Vision Section -->
+    <h2 class="section-title">Our Vision</h2>
+    <p class="lead" style="margin-bottom: 3rem;">To become the top-rated luxury destination for travelers looking for relaxation, style, and world-class service at affordable rates.</p>
+
+    <!-- Why Choose Us -->
+    <h2 class="section-title">Why Choose Us?</h2>
+    <ul class="list-group">
+      <li>Prime Beach City Location</li>
+      <li>Comfortable & Modern Rooms</li>
+      <li>24/7 Room Service</li>
+      <li>Delicious Multi-Cuisine Restaurant</li>
+      <li>Courteous & Professional Staff</li>
+    </ul>
+
+    <!-- Testimonials -->
+    <h2 class="section-title">What Our Guests Say</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>"Our stay at Hotel Paradise was absolutely wonderful. The staff was incredibly friendly and the food was amazing!"</p>
+        <strong>– Aditi Sharma, Mumbai</strong>
+      </div>
+      <div class="testimonial">
+        <p>"Beautiful views, clean rooms, and great hospitality. I would recommend Hotel Paradise to anyone visiting Beach City."</p>
+        <strong>– Ramesh Iyer, Bengaluru</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+  <div class="container d-flex flex-column align-items-center text-center text-light">
+    <div class="mb-3">
+      <span class="fw-bold fs-5">🏨 Hotel Paradise</span>
+      <p class="mb-0">123 Paradise Ave, Beach City, India</p>
+      <p class="mb-0"><i class="bi bi-telephone-fill me-2"></i>+91 234 567 8900</p>
+      <p class="mb-0"><i class="bi bi-envelope-fill me-2"></i>contact@hotelparadise.com</p>
+    </div>
+    <div class="mb-3">
+      <a href="#" class="me-3"><i class="bi bi-instagram fs-4"></i></a>
+      <a href="#" class="me-3"><i class="bi bi-facebook fs-4"></i></a>
+      <a href="#" class="me-3"><i class="bi bi-twitter fs-4"></i></a>
+      <a href="mailto:info@hotelparadise.com"><i class="bi bi-envelope-at-fill fs-4"></i></a>
+    </div>
+    <p class="mb-0">&copy; 2025 Hotel Paradise. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

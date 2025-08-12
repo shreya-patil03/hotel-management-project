@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hotel Paradise - Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #fff;
+      padding-bottom: 6rem; /* for footer spacing */
+    }
+    footer {
+      background-color: #212529;
+      color: #bbb;
+      padding: 2rem 1rem;
+      font-size: 0.95rem;
+    }
+    footer a {
+      color: #bbb;
+      text-decoration: none;
+      margin-right: 1rem;
+      transition: color 0.3s;
+    }
+    footer a:hover {
+      color: #0d6efd;
+    }
+    .navbar-nav {
+      gap: 1rem;
+    }
+    .gallery-img {
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgb(0 0 0 / 0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .gallery-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 24px rgb(0 0 0 / 0.2);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Hotel Paradise</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rooms.html">Rooms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bookings.html">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Paradise login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="galleryParadise.html"
+              >Gallery</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Gallery Section -->
+  <section class="container py-5">
+    <h2 class="mb-4 text-center">Our Stunning Gallery</h2>
+    <div class="row g-4">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img
+          src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg"
+          alt="Room 1"
+          class="gallery-img"
+          loading="lazy"
+        />
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img
+          src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg"
+          alt="Room 2"
+          class="gallery-img"
+          loading="lazy"
+        />
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img
+          src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg"
+          alt="Room 3"
+          class="gallery-img"
+          loading="lazy"
+        />
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img
+          src="https://www.trvme.com/img/accommodations/hotel-paradise-jaipur-img1-1.jpg"
+          alt="Room 4"
+          class="gallery-img"
+          loading="lazy"
+        />
+      </div>
+      <!-- Add more gallery items as needed -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+<!-- Footer -->
+<footer>
+  <div class="container d-flex flex-column align-items-center text-center text-light">
+    <div class="mb-3">
+      <span class="fw-bold fs-5">🏨 Hotel Paradise</span>
+      <p class="mb-0">123 Paradise Ave, Beach City, India</p>
+      <p class="mb-0">
+        <i class="bi bi-telephone-fill me-2"></i>+91 234 567 8900
+      </p>
+      <p class="mb-0">
+        <i class="bi bi-envelope-fill me-2"></i>contact@hotelparadise.com
+      </p>
+    </div>
+    <div class="mb-3">
+      <a href="#" aria-label="Instagram" class="me-3">
+        <i class="bi bi-instagram fs-4"></i>
+      </a>
+      <a href="#" aria-label="Facebook" class="me-3">
+        <i class="bi bi-facebook fs-4"></i>
+      </a>
+      <a href="#" aria-label="Twitter" class="me-3">
+        <i class="bi bi-twitter fs-4"></i>
+      </a>
+      <a href="mailto:info@hotelparadise.com" aria-label="Email">
+        <i class="bi bi-envelope-at-fill fs-4"></i>
+      </a>
+    </div>
+    <p class="mb-0">&copy; 2025 Hotel Paradise. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

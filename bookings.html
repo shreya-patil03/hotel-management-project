@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hotel Paradise - Booking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .booking-header {
+      background-color: #764AD3;
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 15px rgba(13, 110, 253, 0.5);
+    }
+    .form-label {
+      font-weight: 600;
+    }
+    .btn-primary {
+      background-color: #0d6efd;
+      border: none;
+      padding: 0.75rem 2rem;
+      font-size: 1.1rem;
+    }
+    .btn-primary:hover {
+      background-color: #0b5ed7;
+    }
+
+    /* Payment Section Styling */
+    .payment-container {
+      max-width: 650px;
+      margin: 3rem auto;
+      background: rgba(255, 255, 255, 0.96);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      display: none;
+    }
+    .hotel-logo {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .hotel-logo img {
+      width: 60px;
+    }
+    .upi-section {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    .upi-section img {
+      width: 120px;
+      border-radius: 8px;
+    }
+
+    /* Final confirmation */
+    .final-message {
+      display: none;
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: #d1e7dd;
+      color: #0f5132;
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 4rem auto;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+  <a class="navbar-brand" href="new home page paradise.html">
+    <img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Hotel Paradise" width="30" height="30" class="d-inline-block align-text-top" />
+    Hotel Paradise
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row align-items-center gap-3">
+      <li class="nav-item"><a class="nav-link" href="new home page paradise.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+      <li class="nav-item"><a class="nav-link active" href="bookings.html">Booking</a></li>
+      <li class="nav-item"><a class="nav-link" href="Paradise login.html">Login</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="menuDropdown" role="button" data-bs-toggle="dropdown">
+          <i class="bi bi-list fs-4"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="menu.html">Dine</a></li>
+  <li><a class="dropdown-item" href="galleryparadise.html">Gallery</a></li>
+          <li><a class="dropdown-item" href="banquet.html">Banquet</a></li>
+          <li><a class="dropdown-item" href="events.html">Events & Conferences</a></li>
+          <li><a class="dropdown-item" href="offers.html">Offers</a></li>
+		  <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
+          <li><a class="dropdown-item" href="help22.html">Contact Us</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Booking Header -->
+<header class="booking-header">
+  <h1>Book Your Stay at Hotel Paradise</h1>
+  <p class="lead">Fill in your details and confirm your reservation</p>
+</header>
+
+<!-- Booking Form -->
+<main class="container mb-5" id="bookingFormContainer">
+  <form id="bookingForm" class="row g-4 needs-validation" novalidate>
+    <!-- Form fields (unchanged) -->
+    <div class="col-md-6">
+      <label for="guestName" class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="guestName" placeholder="Enter your full name" required />
+      <div class="invalid-feedback">Please enter your name.</div>
+    </div>
+    <div class="col-md-6">
+      <label for="guestEmail" class="form-label">Email Address</label>
+      <input type="email" class="form-control" id="guestEmail" placeholder="name@example.com" required />
+      <div class="invalid-feedback">Please enter a valid email address.</div>
+    </div>
+    <div class="col-md-6">
+      <label for="guestPhone" class="form-label">Phone Number</label>
+      <input type="tel" class="form-control" id="guestPhone" placeholder="+91 98765 43210" required pattern="[0-9+\-\s]{7,15}" />
+      <div class="invalid-feedback">Please enter a valid phone number.</div>
+    </div>
+    <div class="col-md-6">
+      <label for="roomType" class="form-label">Room Type</label>
+      <select id="roomType" class="form-select" required>
+        <option value="" selected disabled>Select a room</option>
+        <option value="standard">Standard Room</option>
+        <option value="deluxe">Deluxe Room</option>
+        <option value="executive-suite">Executive Suite</option>
+        <option value="premium-suite">Premium Suite</option>
+        <option value="family-room">Family Room</option>
+      </select>
+      <div class="invalid-feedback">Please select a room type.</div>
+    </div>
+    <div class="col-md-6">
+      <label for="checkInDate" class="form-label">Check-in Date</label>
+      <input type="date" class="form-control" id="checkInDate" required />
+      <div class="invalid-feedback">Please select a valid check-in date.</div>
+    </div>
+    <div class="col-md-6">
+      <label for="checkOutDate" class="form-label">Check-out Date</label>
+      <input type="date" class="form-control" id="checkOutDate" required />
+      <div class="invalid-feedback">Please select a valid check-out date.</div>
+    </div>
+    <div class="col-md-6">
+      <label for="numGuests" class="form-label">Number of Guests</label>
+      <input type="number" class="form-control" id="numGuests" min="1" max="10" value="1" required />
+      <div class="invalid-feedback">Please enter the number of guests (1-10).</div>
+    </div>
+    <div class="col-12">
+      <label for="specialRequests" class="form-label">Special Requests</label>
+      <textarea class="form-control" id="specialRequests" rows="3" placeholder="Any special requirements?"></textarea>
+    </div>
+    <div class="col-12 text-center">
+      <button type="submit" class="btn btn-primary btn-lg">Confirm Booking</button>
+    </div>
+  </form>
+</main>
+
+<!-- Payment Section (Initially Hidden) -->
+<div class="payment-container" id="paymentSection">
+  <div class="hotel-logo">
+    <img src="https://cdn-icons-png.flaticon.com/512/139/139899.png" alt="Hotel Paradise Logo" />
+    <h3 class="mt-2">Hotel Paradise - Payment</h3>
+  </div>
+  <form id="paymentForm">
+    <div class="mb-3">
+      <label for="nameOnCard" class="form-label">Name on Card</label>
+      <input type="text" class="form-control" id="nameOnCard" placeholder="e.g. Vaishnavi Bagul" required>
+    </div>
+    <div class="mb-3">
+      <label for="cardNumber" class="form-label">Card Number</label>
+      <input type="text" class="form-control" id="cardNumber" maxlength="16" placeholder="1234 5678 9012 3456" required>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="expiryDate" class="form-label">Expiry Date</label>
+        <input type="month" class="form-control" id="expiryDate" required>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="cvv" class="form-label">CVV</label>
+        <input type="password" class="form-control" id="cvv" maxlength="4" placeholder="123" required>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="amount" class="form-label">Amount (INR)</label>
+      <input type="number" class="form-control" id="amount" placeholder="₹5000" required>
+    </div>
+    <div class="upi-section">
+      <h5><i class="bi bi-upc-scan"></i> UPI Payment Option</h5>
+      <p>Scan the QR or use UPI ID to pay directly:</p>
+      <div class="d-flex flex-wrap align-items-center gap-3">
+        <img src="https://pngimg.com/uploads/qr_code/small/qr_code_PNG7.png" alt="Scan QR for UPI">
+        <div>
+          <p class="mb-1">UPI ID:</p>
+          <strong>hotelparadise@upi</strong>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-success w-100 mt-4">Pay Now</button>
+  </form>
+</div>
+
+<!-- Final Confirmation Message -->
+<div class="final-message" id="finalMessage">
+  ✅ Payment Successful! Your booking at <strong>Hotel Paradise</strong> is confirmed.<br/>
+  Thank you for choosing us!
+</div>
+
+<!-- JS Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Set min date for check-in/out
+  document.addEventListener('DOMContentLoaded', () => {
+    const today = new Date().toISOString().split('T')[0];
+    const tomorrow = new Date(Date.now() + 86400000).toISOString().split('T')[0];
+    document.getElementById('checkInDate').min = today;
+    document.getElementById('checkOutDate').min = tomorrow;
+    document.getElementById('checkInDate').value = today;
+    document.getElementById('checkOutDate').value = tomorrow;
+
+    document.getElementById('checkInDate').addEventListener('change', e => {
+      const newMin = new Date(e.target.value);
+      newMin.setDate(newMin.getDate() + 1);
+      document.getElementById('checkOutDate').min = newMin.toISOString().split('T')[0];
+    });
+  });
+
+  // Booking Form Submit Handler
+  const bookingForm = document.getElementById('bookingForm');
+  bookingForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!bookingForm.checkValidity()) {
+      bookingForm.classList.add('was-validated');
+      return;
+    }
+    document.getElementById('bookingFormContainer').style.display = 'none';
+    document.getElementById('paymentSection').style.display = 'block';
+  });
+
+  // Payment Form Submit Handler
+  const paymentForm = document.getElementById('paymentForm');
+  paymentForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!paymentForm.checkValidity()) {
+      paymentForm.classList.add('was-validated');
+      return;
+    }
+    document.getElementById('paymentSection').style.display = 'none';
+    document.getElementById('finalMessage').style.display = 'block';
+  });
+</script>
+</body>
+</html>
